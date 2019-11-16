@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Rt60Page</class>
+ <widget class="QWidget" name="Rt60Page">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>610</width>
+    <height>904</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGraphicsView" name="rt60_graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>510</y>
+     <width>471</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>30</y>
+     <width>481</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="text">
+       <string>RT60 Calculator </string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="length">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Length:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="room_length">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>m </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="width">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Width:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="room_width">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>m </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="height">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Height:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="room_height">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_10">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>m </string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="displaRoomModel">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Display room model</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Selection of wall material:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="material_selection">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string extracomment="大理石">Marble or Tile</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="混凝土">Concrete</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="砖块">Brick</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string extracomment="木板">Wood</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="3" column="1">
+       <widget class="QComboBox" name="comboBox_4">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Marble or Tile</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Concrete</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Brick</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Wood</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="comboBox">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Marble or Tile</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Concrete</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Brick</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Wood</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QComboBox" name="comboBox_5">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Marble or Tile</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Concrete</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Brick</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Wood</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="comboBox_2">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Marble or Tile</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Concrete</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Brick</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Wood</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="comboBox_3">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Marble or Tile</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Concrete</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Brick</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Wood</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>Front</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="comboBox_6">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Marble or Tile</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Concrete</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Brick</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Wood</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>Left</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_11">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>Right</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_12">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ceiling</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_13">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>Floor</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="calculateRT60">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>480</y>
+     <width>141</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>CALCULATE</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
